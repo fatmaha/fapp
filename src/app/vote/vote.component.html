@@ -1,0 +1,19 @@
+<div>
+    <!-- <div *ngIf = data.hide> -->
+    <div class="card bg-light mb-3">
+        <div class="card-body">
+          <div class="mb-3">
+            <h5 class="card-title">{{ data.title }}</h5>
+            <p class="card-text">{{ data.link }}</p>
+          </div>
+
+          <button type="button" class="btn btn-primary mr-3">
+                points <span id="results" class="badge badge-light">{{ data.points}}</span>
+            </button>
+          <button type="button" name="upvote" class="btn btn-success mr-3" id="upvote" (click)= "data.upvote()">Up Vote</button>
+          <button type="button" name="downvote" class="btn btn-danger" (click)= "data.downvote()">Down Vote</button>
+          
+        </div>
+      </div>
+  
+  </div>

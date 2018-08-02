@@ -1,0 +1,19 @@
+<div>
+    <!-- <div *ngIf = data.hide> -->
+    <div class="card bg-light mb-3">
+        <div class="card-body">
+          <div [hidden] = !data.hide class="mb-3">
+            <h5 class="card-title">{{ data.setup }}</h5>
+            <p class="card-text">{{ data.punchline }}</p>
+          </div>
+          
+          <button type="button" name="hide" class="btn btn-success mr-3" (click)= data.toggle()>
+              {{ data.hide ? 'hide': 'show'}}
+            </button>
+          <button type="button" name="delete" class="btn btn-danger" (click)="onDeleteJoke()">delete</button>
+          
+        </div>
+      </div>
+  
+  </div>
+  

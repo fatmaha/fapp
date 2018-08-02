@@ -1,0 +1,7 @@
+<div class="container">
+    <br>
+    <app-vote-form (voteCreated) = addNewVote($event)></app-vote-form>
+    <br>
+    <app-vote *ngFor= "let vote of votelist" [vote] = "vote"></app-vote>
+</div>
+    

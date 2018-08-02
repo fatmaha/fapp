@@ -1,0 +1,9 @@
+<div class="text-center" style="max-width: 60%">
+    <h2 class="accordion-head" (click)="onClick($event)">
+        <ng-content select=".title"></ng-content>
+    </h2>
+    <div class="accordion-body" [class.active]="active">
+        <ng-content select=".desc"></ng-content>
+    </div>
+</div>
+
